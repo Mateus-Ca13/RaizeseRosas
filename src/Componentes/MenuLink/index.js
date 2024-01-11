@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const LinkEstilizado = styled.div`
-display: flex;
-align-items: center;
+
 
 .link {
+    display: flex;
+    align-items: center;
     color: var(--preto);
     text-decoration: none;
     font-size: 18px;

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useCarrinhoContext } from '../../Contextos/carrinho';
 
 const CarrinhoEstilizado = styled.div`
     position: relative;
@@ -45,7 +46,8 @@ const IconeItensCarrinho = styled.span`
 
 
 export default function IconeCarrinho() {
-    const [numeroDeItens, SetnumeroDeItens] = useState(0)
+    const {carrinho, adicionarProdutoNoCarrinho} = useCarrinhoContext();
+    const numeroDeItens = carrinho.length;
 
     return (
         <Link to={"/carrinho"}>

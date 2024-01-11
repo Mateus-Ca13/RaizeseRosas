@@ -30,11 +30,11 @@ nav {
 export default function Header() {
     return (
         <HeaderEstilizado>
-            <Link to={"/"}>
+            <MenuLink to={"/"}>
                 <img className='logo' src={logo} alt='Logotipo da Raizes & Rosas'></img>
-            </Link>
+            </MenuLink>
             <nav>
-                <MenuLink estilizado to={"/"}>Categorias</MenuLink>
+                <MenuLink estilizado to={"/categorias"}>Categorias</MenuLink>
                 <MenuLink estilizado to={"/unidades"}>Unidades</MenuLink>
                 <MenuLink estilizado to={"/contato"}>Contato</MenuLink>
                 <BarraPesquisa />

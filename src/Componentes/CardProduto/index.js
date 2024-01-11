@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { AiFillStar } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 import MenuLink from '../MenuLink'
 
 const CardProdutoEstilizado = styled.div`
@@ -54,7 +53,7 @@ h4 {
 
   .iconeNota {
     margin-left: 1px;
-    color: #e3bc08;
+    color: var(--amarelo);
   }
 }
 }
@@ -64,7 +63,7 @@ export default function CardProduto({ produto }) {
   return (
     <MenuLink to={`/produtos/${produto.id}`}>
       <CardProdutoEstilizado>
-        <img src={produto.imagem} alt={produto.imagem}></img>
+        <img src={produto.imagem} alt={produto.nome}></img>
         <div className='infoCard'>
           <h2>{produto.nome}</h2>
           <span>

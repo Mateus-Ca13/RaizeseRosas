@@ -27,10 +27,12 @@ const BotaoPesquisarEstilizado = styled.button`
 
 export default function BotaoPesquisar({ infoPesquisada }) {
 
+    
+
     return (
 
         <BotaoPesquisarEstilizado>
-            <Link to={`/pesquisar/${infoPesquisada}`}>
+            <Link to={infoPesquisada.length > 0 ? `/pesquisar/${infoPesquisada}` : '/pesquisar/..'}>
                 <AiOutlineSearch />
             </Link>
         </BotaoPesquisarEstilizado>

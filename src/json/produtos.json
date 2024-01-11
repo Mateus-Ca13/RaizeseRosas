@@ -3,7 +3,7 @@
       "id": 1,
       "nome": "Conjunto de Ferramentas de Jardinagem Profissional",
       "descricao": "Este conjunto inclui todas as ferramentas essenciais para jardinagem profissional. Feitas de aço inoxidável de alta qualidade, estas ferramentas são duráveis e resistentes à corrosão. O conjunto inclui uma pá, um ancinho, uma tesoura de poda, um pulverizador, um par de luvas de jardinagem e uma bolsa de transporte resistente. Perfeito para jardineiros experientes e entusiastas que procuram ferramentas confiáveis e eficientes.",
-      "imagem": "./assets/produtos/img1.png",
+      "imagem": "/assets/produtos/img1.png",
       "preco": 89.99,
       "categorias": ["Ferramentas", "Profissional"],
       "nota": 4.9,
@@ -35,7 +35,7 @@
       "id": 2,
       "nome": "Estufa de Jardim com Controle de Clima",
       "descricao": "Esta estufa de jardim é ideal para cultivar uma variedade de plantas durante todo o ano. Construída com materiais de alta qualidade, possui um sistema de controle de clima que regula automaticamente a temperatura, umidade e ventilação. As paredes são feitas de policarbonato resistente a UV que protege as plantas dos raios solares nocivos. A estufa é espaçosa e oferece um ambiente ideal para o cultivo de flores, vegetais e ervas.",
-      "imagem": "./assets/produtos/img2.png",
+      "imagem": "/assets/produtos/img2.png",
       "preco": 549.99,
       "categorias": ["Estufas", "Climatizadas"],
       "nota": 4.8,
@@ -62,7 +62,7 @@
       "id": 3,
       "nome": "Sistema de Irrigação por Gotejamento Inteligente",
       "descricao": "Este sistema de irrigação por gotejamento inteligente é uma solução eficiente para manter seu jardim bem irrigado. Equipado com sensores de umidade do solo e um painel de controle intuitivo, ele ajusta automaticamente a quantidade de água fornecida às plantas com base em suas necessidades individuais. Economize água e promova um crescimento saudável das plantas sem o trabalho manual de regar.",
-      "imagem": "./assets/produtos/img3.png",
+      "imagem": "/assets/produtos/img3.png",
       "preco": 129.99,
       "categorias": ["Irrigação", "Inteligente"],
       "nota": 4.7,
@@ -94,10 +94,10 @@
         "id": 4,
         "nome": "Sementes de Girassol Anão de Jardim",
         "descricao": "Cultive girassóis Anão de Jardim em seu jardim com estas sementes de alta qualidade. Cada pacote contém sementes selecionadas a dedo que produzem girassóis com flores belas e robustas. Perfeito para criar um jardim impressionante e atrair pássaros e borboletas.",
-        "imagem": "./assets/produtos/img4.png",
+        "imagem": "/assets/produtos/img4.png",
         "preco": 8.99,
         "categorias": ["Sementes", "Flores"],
-        "nota": 4.6,
+        "nota": 4.3,
         "quantidadeAvaliacoes": 20,
         "comentarios": [
           {
@@ -126,7 +126,7 @@
         "id": 5,
         "nome": "Vasos de Cerâmica Pintados à Mão",
         "descricao": "Adicione um toque de elegância ao seu jardim com esses vasos de cerâmica pintados à mão. Cada vaso é único, apresentando designs florais e cores vibrantes. Eles são ideais para plantas de interior e exterior, adicionando charme e estilo à sua decoração.",
-        "imagem": "./assets/produtos/img5.png",
+        "imagem": "/assets/produtos/img5.png",
         "preco": 29.99,
         "categorias": ["Decoração", "Vasos"],
         "nota": 4.8,
@@ -148,31 +148,31 @@
         "id": 6,
         "nome": "Luminárias Solares para Jardim",
         "descricao": "Ilumine seu jardim à noite com essas luminárias solares elegantes. Elas carregam durante o dia com energia solar e emitem uma luz suave e aconchegante à noite. Com designs modernos e clássicos, essas luminárias adicionam beleza e segurança ao seu espaço exterior.",
-        "imagem": "./assets/produtos/img6.png",
+        "imagem": "/assets/produtos/img6.png",
         "preco": 19.99,
         "categorias": ["Iluminação", "Solar"],
-        "nota": 4.5,
+        "nota": 2.3,
         "quantidadeAvaliacoes": 32,
         "comentarios": [
           {
             "nomeAutor": "Luiz",
-            "comentario": "Essas luzes solares são econômicas e eficazes, iluminam meu jardim lindamente.",
-            "notaDada": 5
+            "comentario": "Péssimas! Não iluminam nada e são de péssima qualidade.",
+            "notaDada": 1.0
           },
           {
             "nomeAutor": "Viviane",
-            "comentario": "Elas adicionam um toque mágico ao meu jardim à noite, estou muito satisfeita.",
-            "notaDada": 4.5
+            "comentario": "Algumas funcionam razoavelmente bem, mas outras são terríveis.",
+            "notaDada": 2.5
           },
           {
             "nomeAutor": "Rogério",
-            "comentario": "A qualidade da construção poderia ser um pouco melhor, mas elas funcionam bem.",
-            "notaDada": 4
+            "comentario": "Medíocres. Não duraram muito e não iluminam o suficiente.",
+            "notaDada": 2.0
           },
           {
             "nomeAutor": "Fernando",
-            "comentario": "Funcionam bem, mas algumas não duraram muito tempo, talvez devido ao clima.",
-            "notaDada": 3.5
+            "comentario": "Funcionam decentemente, mas não recomendaria. Existem opções melhores.",
+            "notaDada": 3.0
           }
         ]
       },
@@ -180,7 +180,7 @@
         "id": 7,
         "nome": "Adubo Orgânico para Plantas de Interior",
         "descricao": "Este adubo orgânico é perfeito para plantas de interior. Feito com ingredientes naturais, ele fornece nutrientes essenciais para suas plantas, promovendo um crescimento saudável e florescimento exuberante. Além disso, é seguro para uso em todas as plantas de interior.",
-        "imagem": "./assets/produtos/img7.png",
+        "imagem": "/assets/produtos/img7.png",
         "preco": 14.99,
         "categorias": ["Adubo", "Orgânico"],
         "nota": 4.7,
@@ -207,7 +207,7 @@
         "id": 8,
         "nome": "Kit de Ferramentas para Bonsai",
         "descricao": "Este kit completo é perfeito para entusiastas de bonsai. Inclui tesouras de poda, alicates, vareta de raiz, escova de limpeza e cortador de arame, tudo em uma elegante caixa de transporte. As ferramentas são feitas de aço carbono de alta qualidade para durabilidade e precisão.",
-        "imagem": "./assets/produtos/img8.png",
+        "imagem": "/assets/produtos/img8.png",
         "preco": 234.99,
         "categorias": ["Ferramentas", "Bonsai"],
         "nota": 4.6,
@@ -234,7 +234,7 @@
         "id": 9,
         "nome": "Plantas Carnívoras Variadas",
         "descricao": "Crie um jardim intrigante com estas plantas carnívoras variadas. O pacote inclui diferentes espécies, todas prontas para adicionar um toque exótico ao seu espaço. As plantas são saudáveis e bem enraizadas.",
-        "imagem": "./assets/produtos/img9.png",
+        "imagem": "/assets/produtos/img9.png",
         "preco": 21.99,
         "categorias": ["Plantas", "Carnívoras"],
         "nota": 4.4,
@@ -266,7 +266,7 @@
         "id": 10,
         "nome": "Kit de Hidroponia Completo",
         "descricao": "Experimente a jardinagem sem solo com este kit de hidroponia completo. Inclui um sistema de nutrientes, luzes LED de crescimento, tubos de cultivo e sementes hidropônicas. O sistema é fácil de montar e permite o cultivo eficiente de ervas, vegetais e flores dentro de casa.",
-        "imagem": "./assets/produtos/img10.png",
+        "imagem": "/assets/produtos/img10.png",
         "preco": 649.99,
         "categorias": ["Hidroponia", "Cultivo Indoor"],
         "nota": 4.7,
@@ -293,7 +293,7 @@
         "id": 11,
         "nome": "Bonsai de Acer Palmatum",
         "descricao": "Este Bonsai de Acer Palmatum é uma obra-prima da natureza. Originário do Japão, este Bonsai apresenta folhas em forma de leque e uma casca elegante. É cultivado com cuidado e atenção aos detalhes, resultando em uma árvore Bonsai saudável e encantadora. Uma adição perfeita para qualquer coleção de Bonsai.",
-        "imagem": "./assets/produtos/img11.png",
+        "imagem": "/assets/produtos/img11.png",
         "preco": 219.99,
         "categorias": ["Plantas", "Bonsai"],
         "nota": 4.8,
@@ -320,7 +320,7 @@
         "id": 12,
         "nome": "Kit de Jardim para Crianças",
         "descricao": "Introduza as crianças ao mundo da jardinagem com este divertido kit. Inclui ferramentas de jardinagem adequadas para mãos pequenas, vestuário para proteção e um livro educativo. Este kit estimula a criatividade, ensina habilidades de jardinagem e cultiva um amor pela natureza desde cedo.",
-        "imagem": "./assets/produtos/img12.png",
+        "imagem": "/assets/produtos/img12.png",
         "preco": 174.99,
         "categorias": ["Kits", "Educativos"],
         "nota": 4.7,
@@ -347,7 +347,7 @@
         "id": 13,
         "nome": "Plantação Vertical para Interiores",
         "descricao": "Transforme sua casa em um oásis verde com este sistema de plantação vertical para interiores. Ele inclui suportes de parede, vasos de plantas e um sistema de irrigação integrado. Pode ser usado para cultivar uma variedade de ervas, flores e plantas suculentas, adicionando vida e frescor a qualquer espaço interno.",
-        "imagem": "./assets/produtos/img13.png",
+        "imagem": "/assets/produtos/img13.png",
         "preco": 129.99,
         "categorias": ["Decoração", "Plantas de Interior"],
         "nota": 4.6,
@@ -374,7 +374,7 @@
         "id": 14,
         "nome": "Adubo para Orquídeas",
         "descricao": "Especialmente formulado para atender às necessidades das orquídeas, este adubo é rico em nutrientes essenciais. Promove o crescimento saudável, florescimento exuberante e raízes fortes. Pode ser usado para diversas variedades de orquídeas, garantindo que elas floresçam em sua máxima beleza.",
-        "imagem": "./assets/produtos/img14.png",
+        "imagem": "/assets/produtos/img14.png",
         "preco": 15.99,
         "categorias": ["Adubo", "Orquídeas"],
         "nota": 4.4,
@@ -401,7 +401,7 @@
         "id": 15,
         "nome": "Estátua de Jardim em Pedra",
         "descricao": "Adicione um toque artístico ao seu jardim com esta estátua de jardim esculpida à mão. Feita de pedra natural durável, esta estátua apresenta um design detalhado de uma figura humana em uma pose tranquila. É resistente às intempéries e adicionará elegância atemporal ao seu espaço exterior.",
-        "imagem": "./assets/produtos/img15.png",
+        "imagem": "/assets/produtos/img15.png",
         "preco": 289.99,
         "categorias": ["Decoração", "Estátuas"],
         "nota": 4.7,
@@ -428,7 +428,7 @@
         "id": 16,
         "nome": "Kokedama de Samambaia",
         "descricao": "Esta kokedama de samambaia é uma peça de arte viva para o seu espaço. A samambaia é habilmente envolta em musgo e barbante, criando uma esfera verde suspensa. É fácil de cuidar, basta borrifar água regularmente para manter a umidade. Perfeito para pendurar em varandas ou como peça central em sua sala de estar.",
-        "imagem": "./assets/produtos/img16.png",
+        "imagem": "/assets/produtos/img16.png",
         "preco": 59.99,
         "categorias": ["Plantas", "Kokedama"],
         "nota": 4.6,
@@ -455,7 +455,7 @@
         "id": 17,
         "nome": "Muda de Limão Siciliano em Vaso",
         "descricao": "Desfrute de limões frescos em sua própria casa com esta muda em vaso. Cultivada em um recipiente adequado para interiores, esta árvore produz limões suculentos. É fácil de cuidar e proporciona um aroma fresco e frutas para sua casa durante todo o ano.",
-        "imagem": "./assets/produtos/img17.png",
+        "imagem": "/assets/produtos/img17.png",
         "preco": 339.99,
         "categorias": ["Plantas", "Frutas Cítricas"],
         "nota": 4.5,
@@ -482,7 +482,7 @@
         "id": 18,
         "nome": "Ponte de Jardim de Madeira",
         "descricao": "Adicione um toque pitoresco ao seu jardim com esta ponte de jardim de madeira. Feita de madeira de alta qualidade, esta ponte é resistente e durável. É perfeita para atravessar pequenos riachos ou criar um ponto de destaque em seu lago ornamental. O design clássico complementa qualquer paisagem.",
-        "imagem": "./assets/produtos/img18.png",
+        "imagem": "/assets/produtos/img18.png",
         "preco": 1529.99,
         "categorias": ["Decoração", "Ponte"],
         "nota": 4.7,
@@ -509,10 +509,10 @@
         "id": 19,
         "nome": "Coleção de Suculentas Exóticas",
         "descricao": "Esta coleção apresenta uma variedade de suculentas exóticas e raras. Cada planta é única em sua forma e cor, tornando esta coleção uma escolha perfeita para colecionadores e entusiastas de suculentas. As suculentas são saudáveis, enraizadas e prontas para adornar seus arranjos e vasos.",
-        "imagem": "./assets/produtos/img19.png",
+        "imagem": "/assets/produtos/img19.png",
         "preco": 49.99,
         "categorias": ["Plantas", "Suculentas"],
-        "nota": 4.6,
+        "nota": 4.2,
         "quantidadeAvaliacoes": 15,
         "comentarios": [
           {
@@ -528,7 +528,7 @@
           {
             "nomeAutor": "Vanessa",
             "comentario": "Minhas suculentas chegaram em perfeitas condições, elas são simplesmente deslumbrantes.",
-            "notaDada": 4.5
+            "notaDada": 4
           }
         ]
       },
@@ -536,7 +536,7 @@
         "id": 20,
         "nome": "Cachepô de Cimento",
         "descricao": "Este cachepô de cimento é feito à mão por artesãos talentosos, cada peça é única. Ele é perfeito para realçar suas plantas de interior, proporcionando um toque de elegância e charme. A cerâmica é esmaltada para durabilidade e brilho duradouro.",
-        "imagem": "./assets/produtos/img20.png",
+        "imagem": "/assets/produtos/img20.png",
         "preco": 134.99,
         "categorias": ["Decoração", "Cachepôs"],
         "nota": 4.8,
@@ -563,7 +563,7 @@
         "id": 21,
         "nome": "Regador de Jardim Vintage",
         "descricao": "Adicione um toque nostálgico ao seu jardim com este regador de jardim vintage. Feito de metal durável, este regador possui um design clássico. É funcional e decorativo, perfeito para regar suas plantas com estilo. O bico longo proporciona um fluxo de água preciso.",
-        "imagem": "./assets/produtos/img21.png",
+        "imagem": "/assets/produtos/img21.png",
         "preco": 59.99,
         "categorias": ["Ferramentas", "Regadores"],
         "nota": 4.7,
@@ -590,7 +590,7 @@
         "id": 22,
         "nome": "Estufa de Jardim para Cultivo de Plantas",
         "descricao": "Esta estufa de jardim é perfeita para cultivar plantas delicadas ou iniciar mudas. Feita de estrutura de aço resistente e cobertura de PVC transparente, ela fornece proteção contra vento, chuva e pragas. As prateleiras internas oferecem espaço para organizar suas plantas e proporcionam um ambiente ideal para o crescimento saudável.",
-        "imagem": "./assets/produtos/img22.png",
+        "imagem": "/assets/produtos/img22.png",
         "preco": 789.99,
         "categorias": ["Estufas", "Cultivo"],
         "nota": 4.6,
@@ -617,7 +617,7 @@
         "id": 23,
         "nome": "Hidrogel para Plantas",
         "descricao": "Este hidrogel absorve água e libera lentamente para as raízes das plantas, garantindo hidratação constante. Ideal para períodos de seca ou para plantas que precisam de umidade adicional, ele reduz a frequência de rega. Biodegradável e seguro para o meio ambiente, este hidrogel é uma solução eficaz para o cuidado das plantas.",
-        "imagem": "./assets/produtos/img23.png",
+        "imagem": "/assets/produtos/img23.png",
         "preco": 12.99,
         "categorias": ["Cuidados", "Hidratação"],
         "nota": 4.4,
@@ -644,7 +644,7 @@
         "id": 24,
         "nome": "Espantalho de Coruja Dissuador para Jardim",
         "descricao": "Este espantalho dissuador de coruja adiciona charme e funcionalidade ao seu jardim. Feito de materiais resistentes às intempéries, ele afasta pássaros indesejados de suas plantações. Além de sua eficácia, ele também é uma adorável decoração de jardim, com detalhes artesanais e cores vibrantes que alegram o ambiente.",
-        "imagem": "./assets/produtos/img24.png",
+        "imagem": "/assets/produtos/img24.png",
         "preco": 116.99,
         "categorias": ["Decoração", "Espantalhos"],
         "nota": 4.5,
@@ -671,7 +671,7 @@
         "id": 25,
         "nome": "Arame Galvanizado para Bonsai",
         "descricao": "Este arame galvanizado é essencial para moldar e treinar seus bonsais. Resistente à corrosão, é durável e flexível, permitindo que você crie as formas desejadas para suas árvores. Adequado para iniciantes e entusiastas avançados de bonsai, este arame é uma ferramenta indispensável para a arte do bonsai.",
-        "imagem": "./assets/produtos/img25.png",
+        "imagem": "/assets/produtos/img25.png",
         "preco": 18.99,
         "categorias": ["Ferramentas", "Bonsai"],
         "nota": 4.6,
@@ -698,7 +698,7 @@
         "id": 26,
         "nome": "Pá de Jardim com Cabo Ergonômico",
         "descricao": "Esta pá de jardim é projetada para tornar o trabalho no jardim mais fácil e eficiente. Possui uma lâmina afiada de aço inoxidável que penetra no solo com facilidade. O cabo ergonômico oferece uma pegada confortável, reduzindo a fadiga das mãos durante o uso prolongado. É ideal para cavar, plantar e transplantar.",
-        "imagem": "./assets/produtos/img26.png",
+        "imagem": "/assets/produtos/img26.png",
         "preco": 84.99,
         "categorias": ["Ferramentas", "Pás"],
         "nota": 4.7,
@@ -725,16 +725,16 @@
         "id": 27,
         "nome": "Bonsai de Ficus Retusa",
         "descricao": "O Bonsai de Ficus Retusa é uma escolha popular entre os entusiastas de bonsai. Esta árvore apresenta folhas brilhantes e uma estrutura elegante. Cultivado com cuidado, este Bonsai é saudável e resistente. Ele é ótimo para iniciantes devido à sua robustez e facilidade de cuidado, tornando-se uma adição encantadora para qualquer coleção de Bonsai.",
-        "imagem": "./assets/produtos/img27.png",
+        "imagem": "/assets/produtos/img27.png",
         "preco": 359.99,
         "categorias": ["Plantas", "Bonsai"],
-        "nota": 4.5,
+        "nota": 4.1,
         "quantidadeAvaliacoes": 17,
         "comentarios": [
           {
             "nomeAutor": "Rafael",
             "comentario": "Meu Ficus Retusa está prosperando, ele é resistente e fácil de manter.",
-            "notaDada": 4.5
+            "notaDada": 4
           },
           {
             "nomeAutor": "Tatiane",
@@ -750,28 +750,28 @@
       },
       {
         "id": 28,
-        "nome": "Arranjo deCactos em Vaso de Cerâmica",
+        "nome": "Arranjo de Cactos em Vaso de Cerâmica",
         "descricao": "Este arranjo de cactos é uma adição moderna e elegante à sua decoração de interiores. Plantado em um vaso de cerâmica esmaltada, estes cactos são fáceis de cuidar e adicionam um toque de verde à sua casa. Os cactos são resistentes e não requerem muita água, tornando-os perfeitos para quem busca plantas de baixa manutenção.",
-        "imagem": "./assets/produtos/img28.png",
+        "imagem": "/assets/produtos/img28.png",
         "preco": 49.99,
         "categorias": ["Plantas", "Cactos"],
-        "nota": 4.6,
+        "nota": 3.4,
         "quantidadeAvaliacoes": 16,
         "comentarios": [
           {
             "nomeAutor": "Amanda",
-            "comentario": "Eu amo estes cactos, ele são uma peça central em minha sala de estar e requer pouco cuidado.",
-            "notaDada": 5
+            "comentario": "Os cactos são bonitos, mas esperava mais qualidade na cerâmica.",
+            "notaDada": 2.0
           },
           {
             "nomeAutor": "Carlos",
-            "comentario": "A cerâmica é de alta qualidade e os cactos são muitos lindos, é uma decoração perfeita para meu escritório.",
+            "comentario": "Adorei! Os cactos são adoráveis e a cerâmica é incrível!",
             "notaDada": 4.5
           },
           {
             "nomeAutor": "Vanessa",
-            "comentario": "Eu comprei vários desses cactos para decorar minha casa, eles são adoráveis e fáceis de cuidar.",
-            "notaDada": 4.5
+            "comentario": "Eu acho que o preço é justo para a qualidade dos cactos e da cerâmica.",
+            "notaDada": 3.5
           }
         ]
       },
@@ -779,7 +779,7 @@
         "id": 29,
         "nome": "Kit de Ferramentas para Jardinagem Urbana",
         "descricao": "Este kit é projetado para jardineiros urbanos que têm espaço limitado. Inclui ferramentas compactas ideais para ambientes urbanos. As ferramentas ergonômicas facilitam o cultivo em pequenos espaços, permitindo que você crie um jardim vibrante em sua varanda ou terraço.",
-        "imagem": "./assets/produtos/img29.png",
+        "imagem": "/assets/produtos/img29.png",
         "preco": 147.99,
         "categorias": ["Ferramentas", "Jardinagem Urbana"],
         "nota": 4.7,
@@ -806,7 +806,7 @@
         "id": 30,
         "nome": "Pedra para Caminho de Pedras para Jardim",
         "descricao": "Transforme seu jardim em um local encantado com este caminho de pedras. Feito de pedras naturais, cada peça é única em sua forma e cor. O caminho é resistente às intempéries e pode ser facilmente instalado em seu jardim. Ele cria uma passagem serena e elegante, convidando você a explorar seu espaço verde.",
-        "imagem": "./assets/produtos/img30.png",
+        "imagem": "/assets/produtos/img30.png",
         "preco": 29.99,
         "categorias": ["Decoração", "Caminhos"],
         "nota": 4.6,
@@ -833,7 +833,7 @@
         "id": 31,
         "nome": "Conjunto de Vasos de Cerâmica Pintados à Mão",
         "descricao": "Este conjunto de vasos de cerâmica é uma obra de arte para seu jardim. Cada vaso é pintado à mão por artesãos talentosos, apresentando padrões únicos e cores vibrantes. Feitos de cerâmica durável, esses vasos resistem ao clima e adicionam uma explosão de cor ao seu jardim. Perfeitos para plantas floridas e suculentas.",
-        "imagem": "./assets/produtos/img31.png",
+        "imagem": "/assets/produtos/img31.png",
         "preco": 129.99,
         "categorias": ["Decoração", "Vasos"],
         "nota": 4.8,
@@ -860,7 +860,7 @@
         "id": 32,
         "nome": "Kit de Irrigação por Gotejamento para Vasos",
         "descricao": "Este kit de irrigação por gotejamento é perfeito para manter suas plantas de vasos saudáveis e hidratadas. Inclui tubos flexíveis, gotejadores ajustáveis e um temporizador. Você pode programar a irrigação de acordo com as necessidades de suas plantas, economizando água e garantindo que elas recebam a quantidade certa de umidade.",
-        "imagem": "./assets/produtos/img32.png",
+        "imagem": "/assets/produtos/img32.png",
         "preco": 84.99,
         "categorias": ["Cuidados", "Irrigação"],
         "nota": 4.7,
@@ -887,10 +887,10 @@
         "id": 33,
         "nome": "Kit de Ferramentas de Enxertia para Jardim",
         "descricao": "Este kit de ferramentas de enxertia é indispensável para jardinagem avançada. Inclui lâminas afiadas de enxertia, fita de enxertia e um manual detalhado. Permite que você faça enxertos precisos em suas plantas, promovendo o crescimento saudável e a propagação eficaz. Adequado para enxertar árvores frutíferas, rosas e plantas ornamentais.",
-        "imagem": "./assets/produtos/img33.png",
+        "imagem": "/assets/produtos/img33.png",
         "preco": 99.99,
         "categorias": ["Ferramentas", "Enxertia"],
-        "nota": 4.6,
+        "nota": 4.2,
         "quantidadeAvaliacoes": 14,
         "comentarios": [
           {
@@ -906,7 +906,7 @@
           {
             "nomeAutor": "Tatiane",
             "comentario": "Eu usei este kit para enxertar minhas roseiras, e elas floresceram lindamente na temporada seguinte.",
-            "notaDada": 4.5
+            "notaDada": 4.0
           }
         ]
       },
@@ -914,7 +914,7 @@
         "id": 34,
         "nome": "Estátua de Buda para Jardim",
         "descricao": "Esta estátua de Buda é uma adição serena e espiritual ao seu jardim. Feita de concreto resistente às intempéries, ela apresenta detalhes intrincados e uma expressão tranquila. Coloque-a em um local especial no seu jardim para criar um ambiente zen e meditativo. Ideal para amantes de jardinagem que também buscam paz e harmonia.",
-        "imagem": "./assets/produtos/img34.png",
+        "imagem": "/assets/produtos/img34.png",
         "preco": 79.99,
         "categorias": ["Decoração", "Estátuas"],
         "nota": 4.7,
@@ -941,7 +941,7 @@
         "id": 35,
         "nome": "Adubo Orgânico para Plantas",
         "descricao": "Este adubo orgânico é formulado para fornecer nutrientes essenciais às suas plantas, promovendo o crescimento saudável e flores exuberantes. Feito de ingredientes naturais, é seguro para o meio ambiente e eficaz para uma variedade de plantas. Aumenta a fertilidade do solo e melhora a retenção de água, criando condições ideais para o cultivo.",
-        "imagem": "./assets/produtos/img35.png",
+        "imagem": "/assets/produtos/img35.png",
         "preco": 14.99,
         "categorias": ["Cuidados", "Adubos"],
         "nota": 4.8,
@@ -968,26 +968,26 @@
         "id": 36,
         "nome": "Kit de Cultivo de Ervas Aromáticas",
         "descricao": "Este kit de cultivo é perfeito para quem ama cozinhar com ingredientes frescos. Inclui sementes de diversas ervas aromáticas, vasos biodegradáveis e substrato especial. Você pode cultivar manjericão, salsa, cebolinha e outras ervas diretamente na sua cozinha. As ervas frescas não apenas realçam o sabor das suas refeições, mas também adicionam um toque de verde à sua casa.",
-        "imagem": "./assets/produtos/img36.png",
+        "imagem": "/assets/produtos/img36.png",
         "preco": 82.99,
         "categorias": ["Plantas", "Ervas Aromáticas"],
-        "nota": 4.6,
-        "quantidadeAvaliacoes": 11,
+        "nota": 2.3,
+        "quantidadeAvaliacoes": 13,
         "comentarios": [
           {
             "nomeAutor": "Larissa",
-            "comentario": "Eu amo ter minhas próprias ervas na cozinha, elas são convenientes e deliciosas.",
-            "notaDada": 5
+            "comentario": "As ervas não cresceram como esperado, estou decepcionada.",
+            "notaDada": 1.0
           },
           {
             "nomeAutor": "Diego",
-            "comentario": "O kit é ótimo para iniciantes, as instruções são claras e as ervas crescem rapidamente.",
-            "notaDada": 4.5
+            "comentario": "Algumas ervas cresceram bem, mas outras morreram rapidamente.",
+            "notaDada": 2.0
           },
           {
             "nomeAutor": "Vanessa",
-            "comentario": "Eu coloquei os vasos na minha janela e as ervas estão prosperando, é um kit maravilhoso.",
-            "notaDada": 4.5
+            "comentario": "Tive dificuldades em fazer as ervas crescerem, mesmo seguindo as instruções.",
+            "notaDada": 4.0
           }
         ]
       },
@@ -995,7 +995,7 @@
         "id": 37,
         "nome": "Cachepô de Madeira com Treliça",
         "descricao": "Este cachepô de madeira é uma combinação de elegância e funcionalidade. Possui uma treliça integrada, perfeita para suportar plantas trepadeiras. Feito de madeira tratada para resistir às intempéries, ele adiciona um toque clássico ao seu jardim ou varanda. Ideal para cultivar rosas, heras e outras plantas que se beneficiam do suporte vertical.",
-        "imagem": "./assets/produtos/img37.png",
+        "imagem": "/assets/produtos/img37.png",
         "preco": 139.99,
         "categorias": ["Decoração", "Cachepôs"],
         "nota": 4.7,
@@ -1022,11 +1022,11 @@
         "id": 39,
         "nome": "Luminária Solar de Jardim",
         "descricao": "Esta luminária solar é a solução perfeita para iluminar seu jardim à noite. Equipada com painel solar de alta eficiência, ela absorve a energia do sol durante o dia e acende automaticamente ao anoitecer. Com um design elegante e à prova d'água, esta luminária cria uma atmosfera acolhedora em seu jardim, além de ser uma opção eco-friendly para iluminação exterior.",
-        "imagem": "./assets/produtos/img39.png",
+        "imagem": "/assets/produtos/img39.png",
         "preco": 34.99,
         "categorias": ["Decoração", "Iluminação"],
-        "nota": 4.6,
-        "quantidadeAvaliacoes": 9,
+        "nota": 4.3,
+        "quantidadeAvaliacoes": 19,
         "comentarios": [
           {
             "nomeAutor": "Mariana",
@@ -1041,7 +1041,7 @@
           {
             "nomeAutor": "Tatiana",
             "comentario": "A luz é suficientemente brilhante para iluminar a área ao redor da minha varanda, e a carga solar é eficiente.",
-            "notaDada": 4.5
+            "notaDada": 4.0
           }
         ]
       },
@@ -1049,7 +1049,7 @@
         "id": 40,
         "nome": "Comedouro para Pássaros de Cerâmica",
         "descricao": "Este comedouro para pássaros é não apenas funcional, mas também uma adorável peça de decoração para o seu jardim. Feito de cerâmica resistente às intempéries, ele oferece um local seguro para os pássaros se alimentarem. Com um design encantador, este comedouro atrai pássaros e adiciona um toque animado ao seu espaço exterior.",
-        "imagem": "./assets/produtos/img40.png",
+        "imagem": "/assets/produtos/img40.png",
         "preco": 144.99,
         "categorias": ["Decoração", "Comedouros"],
         "nota": 4.7,
@@ -1076,7 +1076,7 @@
         "id": 41,
         "nome": "Cadeira de Balanço para Jardim",
         "descricao": "Esta cadeira de balanço é o lugar perfeito para relaxar em seu jardim. Feita de madeira resistente e tecido durável, ela é projetada para resistir às condições climáticas e proporcionar conforto. O movimento suave de balanço ajuda a relaxar enquanto você aprecia a natureza ao seu redor. Um excelente complemento para qualquer espaço ao ar livre.",
-        "imagem": "./assets/produtos/img41.png",
+        "imagem": "/assets/produtos/img41.png",
         "preco": 379.99,
         "categorias": ["Móveis", "Cadeiras de Balanço"],
         "nota": 4.8,
@@ -1103,7 +1103,7 @@
         "id": 42,
         "nome": "Estação Meteorológica para Jardim",
         "descricao": "Esta estação meteorológica é essencial para os entusiastas de jardinagem que desejam estar sempre informados sobre as condições climáticas. Equipada com termômetro, higrômetro e barômetro, ela fornece dados precisos sobre temperatura, umidade e pressão atmosférica. Coloque-a em seu jardim para acompanhar as mudanças climáticas e tomar decisões informadas sobre o cuidado das suas plantas.",
-        "imagem": "./assets/produtos/img42.png",
+        "imagem": "/assets/produtos/img42.png",
         "preco": 829.99,
         "categorias": ["Acessórios", "Estações Meteorológicas"],
         "nota": 4.6,
@@ -1130,7 +1130,7 @@
         "id": 43,
         "nome": "Arco de Plantas em Metal",
         "descricao": "Este arco de plantas adiciona charme e elegância ao seu jardim. Feito de metal durável e resistente às intempéries, ele suporta o crescimento exuberante de flores e outras plantas trepadeiras. O design delicado e intrincado do arco cria uma entrada romântica e encantadora para o seu jardim ou área externa. Uma peça clássica que transforma seu espaço.",
-        "imagem": "./assets/produtos/img43.png",
+        "imagem": "/assets/produtos/img43.png",
         "preco": 269.99,
         "categorias": ["Decoração", "Arcos de plantas"],
         "nota": 4.7,
@@ -1157,7 +1157,7 @@
         "id": 44,
         "nome": "Placas Decorativas para Jardim",
         "descricao": "Estas placas decorativas são uma maneira encantadora de adicionar personalidade ao seu jardim. Feitas de metal resistente, cada placa apresenta um design único, desde citações inspiradoras até ilustrações delicadas de flores e pássaros. Elas são resistentes às intempéries e vêm com ganchos para fácil instalação. Transforme seu jardim em um espaço acolhedor e expressivo.",
-        "imagem": "./assets/produtos/img44.png",
+        "imagem": "/assets/produtos/img44.png",
         "preco": 27.99,
         "categorias": ["Decoração", "Placas Decorativas"],
         "nota": 4.8,
@@ -1184,7 +1184,7 @@
         "id": 45,
         "nome": "Rede de Descanso para Jardim",
         "descricao": "Esta rede de descanso é o complemento perfeito para o seu jardim, criando um espaço relaxante para balançar suavemente sob a sombra das árvores. Feita de algodão macio e durável, ela suporta confortavelmente duas pessoas. É fácil de instalar e vem com ganchos resistentes. Aproveite os dias ensolarados de verão ou as noites estreladas nesta rede acolhedora.",
-        "imagem": "./assets/produtos/img45.png",
+        "imagem": "/assets/produtos/img45.png",
         "preco": 129.99,
         "categorias": ["Móveis", "Redes de Descanso"],
         "nota": 4.7,
@@ -1211,7 +1211,7 @@
         "id": 47,
         "nome": "Birdbath de Pedra",
         "descricao": "Este birdbath de pedra é uma adição encantadora para o seu jardim, oferecendo um local para pássaros se banharem e se refrescarem. Feito de pedra natural resistente às intempéries, possui uma base estável e uma tigela profunda para acomodar pássaros de todos os tamanhos. O design elegante adiciona um toque clássico ao seu espaço ao ar livre, enquanto proporciona um ambiente acolhedor para a vida selvagem.",
-        "imagem": "./assets/produtos/img47.png",
+        "imagem": "/assets/produtos/img47.png",
         "preco": 279.99,
         "categorias": ["Decoração", "Birdbaths"],
         "nota": 4.7,
@@ -1238,7 +1238,7 @@
         "id": 48,
         "nome": "Esculturas de Borboletas em Metal",
         "descricao": "Estas esculturas de borboletas em metal são uma adição vibrante e artística ao seu jardim. Feitas de metal resistente às intempéries e pintada à mão, elas apresentam cores vivas e detalhes intrincados. Podem ser facilmente instaladas no solo ou em paredes, trazendo um toque de natureza e alegria ao seu espaço ao ar livre. Uma escolha popular para amantes de borboletas e decoração criativa.",
-        "imagem": "./assets/produtos/img48.png",
+        "imagem": "/assets/produtos/img48.png",
         "preco": 29.99,
         "categorias": ["Decoração", "Esculturas"],
         "nota": 4.8,
@@ -1265,7 +1265,7 @@
         "id": 49,
         "nome": "Fonte de Água com Luz LED",
         "descricao": "Esta fonte de água é uma combinação elegante de água em movimento e luz suave. Feita de resina durável para se assemelhar a pedra natural, ela apresenta um design moderno com um cascata relaxante. A base é iluminada por LEDs que criam uma atmosfera serena à noite. A fonte de água é fácil de instalar e inclui uma bomba silenciosa. Ideal para criar um ambiente tranquilo no seu jardim ou pátio.",
-        "imagem": "./assets/produtos/img49.png",
+        "imagem": "/assets/produtos/img49.png",
         "preco": 89.99,
         "categorias": ["Decoração", "Fontes de Água"],
         "nota": 4.6,
@@ -1292,7 +1292,7 @@
         "id": 50,
         "nome": "Globo de Jardim em Vidro",
         "descricao": "Este globo de jardim em vidro é uma adição deslumbrante ao seu espaço ao ar livre. Feito de vidro soprado à mão, ele apresenta cores vibrantes e um acabamento brilhante. Pode ser colocado diretamente no solo ou em suportes específicos para globos. Durante o dia, ele reflete a luz do sol de maneira magnífica, e à noite, pode ser iluminado por luzes LED para criar um efeito mágico. Uma peça de destaque para o seu jardim ou gramado.",
-        "imagem": "./assets/produtos/img50.png",
+        "imagem": "/assets/produtos/img50.png",
         "preco": 69.99,
         "categorias": ["Decoração", "Globos de Jardim"],
         "nota": 4.7,
