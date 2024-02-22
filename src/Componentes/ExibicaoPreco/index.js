@@ -32,9 +32,16 @@ p {
   color: var(--verde-principal);
 }
 
-@media screen  and (max-width: 590px){
+@media screen  and (max-width: 580px){
       flex-direction: column;
       align-items: start;
+      
+      .preco h2 {
+        font-size:20px;
+      }
+      p {
+        font-size: 12px;
+      }
 }
 `
 

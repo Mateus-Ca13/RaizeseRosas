@@ -31,6 +31,10 @@ const AbaContatoEstilizada = styled.div`
 .icon {
     font-size: 20px;
 }
+
+@media screen and (max-width: 1180px){
+    flex-direction: column;
+}
 `
 
 export default function AbaContato() {

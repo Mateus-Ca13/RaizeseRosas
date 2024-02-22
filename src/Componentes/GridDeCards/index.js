@@ -5,22 +5,29 @@ import CardProduto from '../CardProduto'
 const GridEstilizado = styled.section`
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-margin: 2em 0;
 gap: 1em;
-align-items: end;
+margin: 2em;
 
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1180px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 920px) {
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+}
+
+@media screen and (max-width: 710px) {
+    grid-template-columns: 1fr 1fr;
 }
 
 `
 
 export default function GridDeCards({lista, qtdDeCards, ItemParafiltro }) {
 
+  ItemParafiltro ? console.log("tem filtro"): console.log("Nao tem filtro")
+
   // Filtro por categoria de item
-    console.log(ItemParafiltro)
     const listaFiltrada = ItemParafiltro ? 
     lista.filter((produto) => {
       for (let index = 0; index < ItemParafiltro.categorias.length; index++) {

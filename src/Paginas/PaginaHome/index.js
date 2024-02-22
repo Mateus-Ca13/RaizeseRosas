@@ -7,21 +7,14 @@ import styled from 'styled-components'
 
 const PaginaHomeEstilizada = styled.main`
 
-.grid {
-  margin: 0 3em;
-}
 `
 
 export default function PaginaHome() {
   return (
     <PaginaHomeEstilizada>
-      <Banner />
+      <Banner/>
       <Titulo>Produtos em Destaque</Titulo>
-      <div className='grid'>
         <GridDeCards lista={produtos}/>
-      </div>
-
     </PaginaHomeEstilizada>
-
   )
 }

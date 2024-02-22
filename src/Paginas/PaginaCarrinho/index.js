@@ -7,6 +7,7 @@ import ExibicaoPrecoCarrinho from '../../Componentes/ExibicaoPrecoCarrinho';
 import MenuLink from '../../Componentes/MenuLink';
 
 const CarrinhoEstilizado = styled.section`
+
 .exibicaoProdutos {
   display: flex;
   flex-direction: column;
@@ -39,6 +40,13 @@ const CarrinhoEstilizado = styled.section`
         background-color: var(--verde-secundario);
       }
     }
+  }
+}
+
+@media screen and (max-width: 580px){
+  margin-top: 1.5em;
+  .exibicaoProdutos {
+    margin: 1em;
   }
 }
 `

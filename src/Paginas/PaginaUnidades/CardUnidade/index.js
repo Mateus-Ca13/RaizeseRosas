@@ -6,7 +6,6 @@ export default function CardUnidade({ imagem, endereco, numero }) {
     const CardEstilziado = styled.div`
         box-shadow: 1px 1px 10px 5px var(--cinza);
         border-radius: 15px;
-        width: 20vw;
         text-align: center;
 
         .desc {

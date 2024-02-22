@@ -8,7 +8,11 @@ import styled from 'styled-components';
 import GridDeCards from '../../Componentes/GridDeCards';
 
 const PaginaProdutoEstilizado = styled.main`
-margin: 2em;
+margin: 2.5em;
+
+@media screen and (max-width: 580px){
+  margin: 2.5em 1em;
+}
 `
 
 export default function PaginaProduto() {

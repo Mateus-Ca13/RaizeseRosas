@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import BotaoPesquisar from './BotaoPesquisar'
+import { useNavigate } from 'react-router-dom';
 
 const BarraPesquisaEstilizada = styled.div`
     display: flex;
     justify-content: center;
+    margin: 0;
 
     input {
     font-size: 18px;
@@ -24,16 +26,28 @@ const BarraPesquisaEstilizada = styled.div`
         outline: none;
     }
 }
+
+@media screen and (max-width: 1180px){
+    border: 3px solid var(--branco);
+    border-radius: 10px;
+    input {
+        width: 70vw;  
+    }
+    }
 `
 
 
-export default function BarraPesquisa() {
+export default function BarraPesquisa({ viewType }) {
     const [pesquisaFeita, setPesquisaFeita] = useState("");
+    const link = useNavigate();
 
   return (
     <BarraPesquisaEstilizada >
-        <input onChange={(e) => {setPesquisaFeita(e.target.value)}} placeholder='O que você está buscando?'></input>
-        <BotaoPesquisar infoPesquisada={pesquisaFeita}>Buscar</BotaoPesquisar>
+        <input
+        onKeyDown={(e) => {if(e.key == 'Enter') {link(pesquisaFeita.length > 0 ? `/pesquisar/${pesquisaFeita}` : '/pesquisar/..')}}}
+        onChange={(e) => {setPesquisaFeita(e.target.value)}} 
+        placeholder='O que você está buscando?'></input>
+        <BotaoPesquisar infoPesquisada={pesquisaFeita}></BotaoPesquisar>
     </BarraPesquisaEstilizada>
   )
 }

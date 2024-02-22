@@ -8,12 +8,17 @@ const LayoutEstilizado = styled.section`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+
+.espaçamento {
+  margin: 2em;
+}
 `
 
 export default function LayoutPadrao() {
   return (
     <LayoutEstilizado>
     <Header/>
+    <div className='espaçamento'/>
     <Outlet/>
     <Rodape/>
     </LayoutEstilizado>

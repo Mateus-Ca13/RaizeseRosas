@@ -8,9 +8,19 @@ const PaginaUnidadesEstilizada = styled.main`
 
 .cards {
   margin: 3em;
-  display: flex;
+  gap: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-around;
 }
+
+@media screen and (max-width: 1180px) {
+  .cards{
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+
 `
 
 export default function PaginaUnidades() {

@@ -19,8 +19,18 @@ p {
     color: var(--amarelo);
 }
 
+.nota {
+    display: flex;
+    align-items: center;
+}
+
 .vazia {
     color: var(--cinza);
+}
+
+@media screen and (max-width: 580px){
+    
+display: block;
 }
 `
 
@@ -34,9 +44,9 @@ export default function ExibidorNotaProduto({ nota, quantidadeAvaliacoes }) {
 
     return (
         <ExibidorNotaEstilizado>
-            <p className='nota'>{nota}</p>
+            <p className='nota'>{nota}
             
-                {estrelas.map((resposta) => resposta === true ? <AiFillStar key={estrelas.length +=1} className='cheia estrela' /> : <AiFillStar className='vazia estrela' />)}
+                {estrelas.map((resposta) => resposta === true ? <AiFillStar key={estrelas.length +=1} className='cheia estrela' /> : <AiFillStar className='vazia estrela' />)}</p>
             
             <p>({quantidadeAvaliacoes} Avaliações)</p>
 

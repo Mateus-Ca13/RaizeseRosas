@@ -4,6 +4,7 @@ import logo from './logo.png'
 import MenuLink from '../MenuLink'
 
 const RodapeEstilizado = styled.div`
+text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -20,6 +21,14 @@ padding: 2em 0 1em 0;
   margin: 1em ;
   display: flex;
   gap: 0.2em;
+}
+
+@media screen and (max-width: 580px){
+  font-size: 12px;
+
+  .links {
+    font-size: 12px;
+  }
 }
 `
 export default function Rodape() {

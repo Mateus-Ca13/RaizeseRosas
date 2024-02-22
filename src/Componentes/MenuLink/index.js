@@ -27,6 +27,11 @@ const LinkEstilizado = styled.div`
     color: currentColor;
 }
 
+@media screen and (max-width: 580px) {
+    .link {
+        font-size: 14px;
+    }
+}
 `
 
 

@@ -24,11 +24,6 @@ img {
   width: 480px;
   height: 480px
 }
-.itemImg {
-
-
-
-}
 
 h1 {
   margin: 0;
@@ -36,6 +31,7 @@ h1 {
 
 @media screen and (max-width: 1100px){
   flex-direction: column;
+  gap: 1em;
 
   img {
   width: 40%;
@@ -49,6 +45,15 @@ h1 {
     border-radius: 15px;
 }
 
+}
+@media screen and (max-width: 580px){
+
+img {
+ width: 100%;
+}
+.desc {
+  font-size: 14px;
+}
 }
 
 `
@@ -66,7 +71,7 @@ export default function ExibicaoProduto({ produtoExibido }) {
         <h1>{produtoExibido.nome}</h1>
         <ExibidorNotaProduto nota={produtoExibido.nota} quantidadeAvaliacoes={produtoExibido.quantidadeAvaliacoes} />
         <ExibicaoPreco preco={produtoExibido.preco} />
-        <p>{produtoExibido.descricao}</p>
+        <p className='desc'>{produtoExibido.descricao}</p>
       </span>
       <BotaoAdicionarAoCarrinho produto={produtoExibido} />
     </div>

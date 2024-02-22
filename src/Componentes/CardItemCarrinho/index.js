@@ -34,6 +34,22 @@ img {
         margin-top: 1em;
     }
 }
+
+@media screen  and (max-width: 580px){
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    img {
+        width: 100%;
+    }
+    .infoProduto {
+        margin-bottom: 1em;
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 `
 
 export default function CardItemCarrinho({ itemCarrinho }) {

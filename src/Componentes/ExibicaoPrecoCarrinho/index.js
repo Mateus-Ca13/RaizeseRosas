@@ -23,6 +23,10 @@ const ExibidorPrecoCarrinhoEstilizado = styled.div`
     font-size: 22px;
   }
 
+  @media screen  and (max-width: 580px){
+    flex-direction: column;
+  }
+
 `
 
 export default function ExibicaoPrecoCarrinho() {

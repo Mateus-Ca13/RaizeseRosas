@@ -12,17 +12,17 @@ padding: 0.2em;
 img {
 width: 100%;
 border-radius: 15px 15px 0 0;
-border-bottom: 4px solid var(--verde-principal)
+border-bottom: 4px solid var(--verde-principal);
 }
 
 .infoCard {
-padding: 0.5em 1em ;
+padding: 0.5em 1em;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 height: 100px;
 
-span {
+span, picture {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,11 +50,30 @@ h4 {
   margin: 0;
   display: flex;
   align-items: center;
+  
 
   .iconeNota {
     margin-left: 1px;
     color: var(--amarelo);
   }
+}
+
+@media screen and (max-width: 540px){
+  padding: 0.5em;
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h2, h4 {
+    font-size: 12px;
+  }
+
+span {
+  flex-direction: column;
+}
+
+  
 }
 }
 
@@ -68,7 +87,7 @@ export default function CardProduto({ produto }) {
           <h2>{produto.nome}</h2>
           <span>
             <h3>R${produto.preco}</h3>
-            <h4>{produto.nota}<AiFillStar className='iconeNota' /></h4>
+            <picture><h4>{produto.nota}<AiFillStar className='iconeNota' /></h4></picture>
           </span>
 
         </div>

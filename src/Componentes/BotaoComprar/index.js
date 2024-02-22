@@ -18,6 +18,7 @@ font-weight: 700;
 color: var(--branco);
 }
 
+
 `
 
 export default function BotaoComprar() {

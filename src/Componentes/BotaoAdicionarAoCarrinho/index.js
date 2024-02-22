@@ -47,6 +47,16 @@ const BotaoCarrinhoEstilizado = styled.div`
   transition: 0.2s all;
   }
 
+  @media screen and (max-width: 580px){
+
+    .padrao, .ativado {
+      font-size: 14px;
+    }
+
+    .icon {
+      font-size: 18px;
+    }
+  }
    
 `
 
@@ -76,7 +86,7 @@ export default function BotaoAdicionarAoCarrinho({ produto }) {
       }}
     >
       {estadoDeFrase}
-      <AiOutlineShoppingCart />
+      <AiOutlineShoppingCart className='icon'/>
       </button>
     </BotaoCarrinhoEstilizado >
   )

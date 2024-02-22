@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TituloEstilizado = styled.div`
+display: flex;
+justify-content: center;
 text-align: center;
-margin: 1em 0;
+
 
 h1 {
-    display: inline;
+    margin: 0.5em;;
     font-size: 30px;
     font-weight: 700;
     color: var(--preto);
@@ -15,6 +17,11 @@ border-bottom: 2px solid var(--verde-principal);
 
 }
 
+@media screen  and (max-width: 500px){
+  h1 {
+    font-size: 20px;
+  }
+}
 
 `
 

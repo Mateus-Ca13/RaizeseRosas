@@ -41,6 +41,24 @@ p{
         color: var(--amarelo)
     }
 }
+
+@media screen and (max-width: 580px){
+    
+    .comentario {
+        font-size: 12px;
+    }
+
+    .usuario
+    {
+        .perfil {
+            font-size: 26px;
+
+        }
+        .autor, p {
+            font-size: 12px;
+        }
+    }
+}
 `
 
 export default function CardComentario({comentario}) {
