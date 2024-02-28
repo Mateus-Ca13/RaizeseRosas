@@ -13,6 +13,15 @@ margin: 0 3em 3em 3em;
     font-size: 18px;
     margin: 2em 5em;
 }
+
+@media screen and (max-width: 580px) {
+  margin: 2.5em 1em;
+
+  .center{
+    margin: 1em;
+    font-size: 90%;
+  }
+}
 `
 
 export default function PaginaContato() {

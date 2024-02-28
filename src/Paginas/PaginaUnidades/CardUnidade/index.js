@@ -41,7 +41,19 @@ export default function CardUnidade({ imagem, endereco, numero }) {
             display: block;
         }
 
+        @media screen and (max-width: 580px) {
+            h3 {
+                font-size: 90%;
+            }
 
+            h4, h5 {
+                font-size: 80%;
+            }
+
+            .desc {
+                height: 150px;
+            }
+        }
     `
 
     return (

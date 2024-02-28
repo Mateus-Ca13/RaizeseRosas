@@ -12,6 +12,13 @@ const FormularioEstilizado = styled.section`
   margin: 0 0 1em 0;
   text-align: center;
  }
+
+ @media screen and (max-width: 580px){
+  
+  h3 {
+    font-size: 90%;
+  }
+ }
 `
 
 export default function Formulario() {

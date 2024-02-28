@@ -19,7 +19,7 @@ display: block;
 export default function MenuHamburguer() {
   const [menuAberto, setMenuAberto] = useState(false)
     
-  function alterarMenu (menuAberto) {
+  function alterarMenu () {
     menuAberto == true? setMenuAberto(false) : setMenuAberto(true)
     
   }

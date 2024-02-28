@@ -21,6 +21,9 @@ margin: 2em;
     grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 580px){
+  margin: 2em 1em;
+}
 `
 
 export default function GridDeCards({lista, qtdDeCards, ItemParafiltro }) {

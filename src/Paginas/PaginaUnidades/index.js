@@ -21,6 +21,16 @@ const PaginaUnidadesEstilizada = styled.main`
   }
 }
 
+@media screen and (max-width: 580px) {
+  margin-top: 2.5em;
+
+  .cards{
+    margin: 1.5em;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
 `
 
 export default function PaginaUnidades() {

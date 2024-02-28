@@ -44,6 +44,12 @@ input {
     
     }
   }
+
+  @media screen and (max-width: 580px){
+    label, input {
+      font-size: 70%;
+    }
+  }
 `
 
 export default function Input({ tipo, placeholder, children}) {
