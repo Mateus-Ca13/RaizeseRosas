@@ -12,7 +12,7 @@ border-radius: 15px;
 export default function ComentariosAba({ comentarios }) {
   return (
     <ComentariosAbaEstilizado>
-        {comentarios.map((comentario) => {return <CardComentario comentario={comentario}/>})}
+        {comentarios.map((comentario) => {return <CardComentario key={comentarios.length += 1} comentario={comentario}/>})}
     </ComentariosAbaEstilizado>
   )
 }

@@ -25,7 +25,7 @@ export default function PaginaProduto() {
     <Titulo>Comentários</Titulo>
     <ComentariosAba comentarios={produto.comentarios}/>
     <Titulo>Itens semelhantes a esse</Titulo>
-    <GridDeCards lista={produtos} qtdDeCards={5} ItemParafiltro={produto}/>
+    <GridDeCards lista={produtos} qtdDeCards={5} itemParafiltro={produto}/>
     </PaginaProdutoEstilizado>
   )
 }

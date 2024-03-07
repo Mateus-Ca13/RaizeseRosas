@@ -14,7 +14,7 @@ export default function PaginaHome() {
     <PaginaHomeEstilizada>
       <Banner/>
       <Titulo>Produtos em Destaque</Titulo>
-        <GridDeCards lista={produtos}/>
+        <GridDeCards ItemParafiltro={false} lista={produtos}/>
     </PaginaHomeEstilizada>
   )
 }

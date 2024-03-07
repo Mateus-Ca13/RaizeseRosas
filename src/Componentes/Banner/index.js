@@ -12,7 +12,7 @@ width: 100%;
 
 export default function Banner() {
   const [tamanhoBanner, setTamanhoBanner] = useState(imagemLG)
-    console.log(tamanhoBanner)
+    
     
   return (
     <BannerEstilizado on src={imagemLG}/>

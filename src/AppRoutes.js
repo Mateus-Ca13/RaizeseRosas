@@ -10,6 +10,7 @@ import ScrollToTop from './Componentes/ScrollToTop'
 import PaginaUnidades from './Paginas/PaginaUnidades'
 import PaginaContato from './Paginas/PaginaContato'
 
+
 export default function AppRoutes() {
   return (
     <>
@@ -21,7 +22,6 @@ export default function AppRoutes() {
                 <Route index element={<PaginaHome />} />
                 <Route path='/unidades' element={<PaginaUnidades/>}/>
                 <Route path='/contato' element={<PaginaContato/>}/>
-                <Route path='/categorias' element={<PaginaUnidades/>}/>
                 <Route path='produtos/:id/*' element={<PaginaProduto />} />
                 <Route path='pesquisar/:busca/*' element={<PaginaPesquisa />} />
                 <Route path='/carrinho' element={<PaginaCarrinho />} />

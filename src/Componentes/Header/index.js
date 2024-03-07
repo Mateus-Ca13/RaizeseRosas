@@ -65,7 +65,7 @@ export default function Header() {
             </MenuLink>
             <nav>
                 <div className='links desktopView'>
-                    <MenuLink estilizado to={"/categorias"}>Categorias</MenuLink>
+                    <MenuLink estilizado to={"/"}>Destaques</MenuLink>
                     <MenuLink estilizado to={"/unidades"}>Unidades</MenuLink>
                     <MenuLink estilizado to={"/contato"}>Contato</MenuLink>
                 </div>

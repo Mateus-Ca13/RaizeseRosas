@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import CardProduto from '../CardProduto'
 
@@ -26,28 +26,29 @@ margin: 2em;
 }
 `
 
-export default function GridDeCards({lista, qtdDeCards, ItemParafiltro }) {
+export default function GridDeCards({lista, qtdDeCards, itemParafiltro }) {
+  
+  
+  itemParafiltro ? console.log("tem filtro"): console.log("Nao tem filtro");
 
-  ItemParafiltro ? console.log("tem filtro"): console.log("Nao tem filtro")
-
+  console.log(lista)
   // Filtro por categoria de item
-    const listaFiltrada = ItemParafiltro ? 
+    const listaFiltrada = itemParafiltro ? 
     lista.filter((produto) => {
-      for (let index = 0; index < ItemParafiltro.categorias.length; index++) {
-        const categoria = ItemParafiltro.categorias[index];
+      for (let index = 0; index < itemParafiltro.categorias.length; index++) {
+        const categoria = itemParafiltro.categorias[index];
         if(produto.categorias.includes(categoria))
-        {if (ItemParafiltro.id != produto.id)
+        {if (itemParafiltro.id != produto.id)
           {return produto}}
       }
-      }).concat(lista.sort(() => Math.random() - 0.5)).reverse() : 
-    lista
-
+      }).concat(lista).reverse() : 
+      lista;
+      console.log(listaFiltrada)
     //Quantificação de itens da lista
-    const ListaFinal = qtdDeCards ? listaFiltrada.slice(-(qtdDeCards)) : listaFiltrada;
-
+    const listaFinal = qtdDeCards ? listaFiltrada.slice(-(qtdDeCards)) : listaFiltrada;
   return (
     <GridEstilizado>
-        {ListaFinal.reverse().map((produto) => {return <CardProduto produto={produto} key={produto.id} />})}
+        {listaFinal.reverse().map((produto) => {return <CardProduto produto={produto} key={produto.id} />})}
     </GridEstilizado>
   )
 }

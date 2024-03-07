@@ -46,7 +46,7 @@ export default function ExibidorNotaProduto({ nota, quantidadeAvaliacoes }) {
         <ExibidorNotaEstilizado>
             <p className='nota'>{nota}
             
-                {estrelas.map((resposta) => resposta === true ? <AiFillStar key={estrelas.length +=1} className='cheia estrela' /> : <AiFillStar className='vazia estrela' />)}</p>
+                {estrelas.map((resposta) => resposta === true ? <AiFillStar key={estrelas.length +=1} className='cheia estrela' /> : <AiFillStar className='vazia estrela' key={estrelas.length +=1}/>)}</p>
             
             <p>({quantidadeAvaliacoes} Avaliações)</p>
 

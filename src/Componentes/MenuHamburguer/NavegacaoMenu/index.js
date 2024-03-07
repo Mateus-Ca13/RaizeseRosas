@@ -35,7 +35,7 @@ export default function NavegacaoMenu({ fecharMenu }) {
     <>
       <NavegacaoEstilizada onClick={() => fecharMenu()}>
         <div className='lista'>
-          <MenuLink estilizado to={"/categorias"}>Categorias</MenuLink>
+          <MenuLink estilizado to={"/"}>Destaques</MenuLink>
           <MenuLink estilizado to={"/unidades"}>Unidades</MenuLink>
           <MenuLink estilizado to={"/contato"}>Contato</MenuLink>
         </div>
