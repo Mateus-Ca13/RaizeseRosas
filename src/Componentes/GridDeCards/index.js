@@ -45,10 +45,10 @@ export default function GridDeCards({lista, qtdDeCards, itemParafiltro }) {
       lista;
       console.log(listaFiltrada)
     //Quantificação de itens da lista
-    const listaFinal = qtdDeCards ? listaFiltrada.slice(-(qtdDeCards)) : listaFiltrada;
+    const listaFinal = qtdDeCards ? listaFiltrada.slice(-(qtdDeCards)).reverse() : listaFiltrada;
   return (
     <GridEstilizado>
-        {listaFinal.reverse().map((produto) => {return <CardProduto produto={produto} key={produto.id} />})}
+        {listaFinal.map((produto) => {return <CardProduto produto={produto} key={produto.id} />})}
     </GridEstilizado>
   )
 }
