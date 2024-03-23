@@ -31,7 +31,6 @@ export default function GridDeCards({lista, qtdDeCards, itemParafiltro }) {
   
   itemParafiltro ? console.log("tem filtro"): console.log("Nao tem filtro");
 
-  console.log(lista)
   // Filtro por categoria de item
     const listaFiltrada = itemParafiltro ? 
     lista.filter((produto) => {
@@ -43,7 +42,7 @@ export default function GridDeCards({lista, qtdDeCards, itemParafiltro }) {
       }
       }).concat(lista).reverse() : 
       lista;
-      console.log(listaFiltrada)
+
     //Quantificação de itens da lista
     const listaFinal = qtdDeCards ? listaFiltrada.slice(-(qtdDeCards)).reverse() : listaFiltrada;
   return (

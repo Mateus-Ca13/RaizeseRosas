@@ -7,12 +7,15 @@ import styled from 'styled-components'
 
 const PaginaHomeEstilizada = styled.main`
 
+@media screen and (max-width: 580px){
+  
+}
 `
 
 export default function PaginaHome() {
   return (
     <PaginaHomeEstilizada>
-      <Banner/>
+      <Banner />
       <Titulo>Produtos em Destaque</Titulo>
         <GridDeCards ItemParafiltro={false} lista={produtos}/>
     </PaginaHomeEstilizada>
