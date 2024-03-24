@@ -27,9 +27,6 @@ margin: 2em;
 `
 
 export default function GridDeCards({lista, qtdDeCards, itemParafiltro }) {
-  
-  
-  itemParafiltro ? console.log("tem filtro"): console.log("Nao tem filtro");
 
   // Filtro por categoria de item
     const listaFiltrada = itemParafiltro ? 

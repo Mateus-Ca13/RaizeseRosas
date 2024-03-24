@@ -3,33 +3,30 @@ import { useParams } from 'react-router-dom'
 import styled from 'styled-components';
 import Titulo from '../../Componentes/Titulo';
 import { RiToolsFill } from "react-icons/ri";
+import GridPesquisaResultado from '../../Componentes/GridPesquisaResultado';
+
 
 const PaginaPesquisaEstilizada = styled.section`
-  h2, h3, p {
+  .pesquisa{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 0;
+    margin: 0 3em;
+    border-radius: 10px;
+    background-color: var(--verde-secundario);
+
   }
 
-  .aviso {
-    gap: 0.5em;
-    background-color: var(--cinza);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em;
-  padding: 1em;
-  border-radius: 15px;
 
-  .icon {
-    font-size: 50px;
+  @media screen and (max-width: 1180px){
+    margin: 1.5em 0;
+
   }
-  
+
   @media screen and (max-width: 580px){
-    margin: 2.5em 1em 
-  }
-
-  
+    .pesquisa {
+      font-size: 16px;
+    }
   }
 `
 export default function PaginaPesquisa() {
@@ -37,13 +34,8 @@ export default function PaginaPesquisa() {
   return (
     <PaginaPesquisaEstilizada>
     <Titulo>Resultados para: </Titulo>
-    <h2>{parametros.busca}</h2>
-    <div className='aviso'>
-      <RiToolsFill className='icon'/>
-      <h3>Esta página está em desenvolvimento!</h3>
-      <p>Em futuras atulizações ela estará disponível.</p>
-    </div>
-
+    <h2 className='pesquisa'>{parametros.busca}</h2>
+    <GridPesquisaResultado pesquisa={parametros.busca}/>
     </PaginaPesquisaEstilizada>
     
   )

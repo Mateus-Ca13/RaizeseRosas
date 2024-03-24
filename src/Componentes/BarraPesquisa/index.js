@@ -44,7 +44,13 @@ export default function BarraPesquisa({ viewType }) {
   return (
     <BarraPesquisaEstilizada >
         <input
-        onKeyDown={(e) => {if(e.key == 'Enter') {link(pesquisaFeita.length > 0 ? `/pesquisar/${pesquisaFeita}` : '/pesquisar/..')}}}
+        onKeyDown={(e) => {
+            if(e.key == 'Enter') {
+        link(pesquisaFeita.length > 0 ? 
+            pesquisaFeita.includes(".") ? 
+        '/pesquisar/..' :  `/pesquisar/${pesquisaFeita}`  : '/pesquisar/..')
+    }
+}}
         onChange={(e) => {setPesquisaFeita(e.target.value)}} 
         placeholder='O que você está buscando?'></input>
         <BotaoPesquisar infoPesquisada={pesquisaFeita}></BotaoPesquisar>

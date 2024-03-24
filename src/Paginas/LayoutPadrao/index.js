@@ -6,6 +6,7 @@ import Rodape from '../../Componentes/Rodape'
 
 const LayoutEstilizado = styled.section`
 display: flex;
+position: relative;
 flex-direction: column;
 justify-content: space-between;
 

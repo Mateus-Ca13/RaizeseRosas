@@ -32,7 +32,9 @@ export default function BotaoPesquisar({ infoPesquisada }) {
     return (
 
         <BotaoPesquisarEstilizado>
-            <Link to={infoPesquisada.length > 0 ? `/pesquisar/${infoPesquisada}` : '/pesquisar/..'}>
+            <Link to={infoPesquisada.length > 0 ? 
+                        infoPesquisada.includes(".") ? 
+                        '/pesquisar/..' :  `/pesquisar/${infoPesquisada}` : '/pesquisar/..'}>
                 <AiOutlineSearch />
             </Link>
         </BotaoPesquisarEstilizado>
