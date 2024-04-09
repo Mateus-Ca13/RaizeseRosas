@@ -28,7 +28,15 @@ flex-direction: column;
 
 @media screen and (max-width: 780px){
     max-width: 100%;
-
+    h3, span, p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 680px){
+    
+  h3, span {
+    font-size: 14px;
+  }
 }
 `
 

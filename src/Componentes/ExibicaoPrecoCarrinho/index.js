@@ -45,7 +45,8 @@ const ExibidorPrecoCarrinhoEstilizado = styled.div`
 
   @media screen  and (max-width: 380px){
     .preco {
-
+      flex-direction: column;
+      align-items: start;
       h2 {
         font-size: 11px;
         margin: 0;

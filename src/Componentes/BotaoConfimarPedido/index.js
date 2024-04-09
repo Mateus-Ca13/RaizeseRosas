@@ -24,6 +24,18 @@ transition: 0.3s all;
 }
 }
 
+@media screen and (max-width: 780px){
+  input {
+    font-size: 16px;
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 680px){
+  input {
+    font-size: 14px;
+  }
+}
 `
 
 export default function BotaoConfirmarPedido() {

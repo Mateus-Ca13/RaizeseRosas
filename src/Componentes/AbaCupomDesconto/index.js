@@ -48,6 +48,10 @@ button {
     p {
         font-size: 14px;
         }
+    button {
+            width: 100%;
+            padding: 0.5em;
+        }
 }
 @media screen and (max-width: 680px) {
     input {
@@ -55,9 +59,9 @@ button {
         font-size: 14px;
     }
     button {
-        width: 100%;
+       
         font-size: 14px;
-        padding: 0.5em;
+
 
     }
     }
@@ -69,48 +73,48 @@ export default function AbaCupomDesconto({ setDesconto, frete, precoPedido, desc
         {
             codigoCupom: "5OFF",
             efeitoCupom: precoPedido / 20
-        },{
+        }, {
             codigoCupom: "10OFF",
             efeitoCupom: precoPedido / 10
-        },{
+        }, {
             codigoCupom: "15OFF",
             efeitoCupom: precoPedido / 6.5
-        },{
+        }, {
             codigoCupom: "FRETEOFF",
             efeitoCupom: frete
         }]
-    
-    function atualizarCodigo (evento) {
+
+    function atualizarCodigo(evento) {
         setCodigoCupom(evento.target.value)
     }
 
-    function aplicarCupom (cupons) {
+    function aplicarCupom(cupons) {
         let codigovalido = false;
 
         cupons.forEach((cupom) => {
-            if(cupom.codigoCupom.toLowerCase() == codigoCupom.toLowerCase() ){
-              setDesconto(cupom.efeitoCupom) 
-              codigovalido = true
+            if (cupom.codigoCupom.toLowerCase() == codigoCupom.toLowerCase()) {
+                setDesconto(cupom.efeitoCupom)
+                codigovalido = true
             } else {
-                
+
             }
         })
         codigovalido ? codigovalido = true : alert("Insira um cupom válido!")
 
 
-       
-        
+
+
     }
 
-  return (
+    return (
 
-    <AbaDescontoEstilizada>
-       <h2>Cupom de Desconto</h2>
-       <div className='flex'>
-        <input placeholder='Insira seu Cupom' onChange={(evento)=>{atualizarCodigo(evento)}}></input>
-        <button onClick={()=>{aplicarCupom(cupons)}}>Aplicar Cupom</button>
-        {desconto > 0 ? <p>Cupom aplicado com sucesso!</p> : <p></p>}
-        </div>
+        <AbaDescontoEstilizada>
+            <h2>Cupom de Desconto</h2>
+            <div className='flex'>
+                <input placeholder='Insira seu Cupom' onChange={(evento) => { atualizarCodigo(evento) }}></input>
+                <button onClick={() => { aplicarCupom(cupons) }}>Aplicar Cupom</button>
+                {desconto > 0 ? <p>Cupom aplicado com sucesso!</p> : <p></p>}
+            </div>
         </AbaDescontoEstilizada>
-  )
+    )
 }

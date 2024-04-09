@@ -34,12 +34,18 @@ button {
 
   button {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .resultadoFrete {
   
     margin: 0 0 2em 0;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 680px){
+  button {
     font-size: 14px;
   }
 }
