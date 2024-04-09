@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+
 import styled from 'styled-components';
-import BotaoComprar from '../BotaoComprar';
-import { useCarrinhoContext } from '../../Contextos/carrinho';
+import BotaoFinalizarCompra from '../BotaoFinalizarCompra';
 
 const ExibidorPrecoCarrinhoEstilizado = styled.div`
   display: flex;
@@ -23,29 +22,37 @@ const ExibidorPrecoCarrinhoEstilizado = styled.div`
     font-size: 22px;
   }
 
-  @media screen  and (max-width: 580px){
+  .preco {
+    display: flex;
+    align-items: center;
+
+    h2 {
+
+      margin: 0.2em;
+      font-size: 16px;
+    }
+  }
+
+  @media screen  and (max-width: 680px){
     flex-direction: column;
+    align-items: start;
   }
 
 `
 
-export default function ExibicaoPrecoCarrinho() {
-  const { carrinho } = useCarrinhoContext()
-  let precoTotal = 0;
+export default function ExibicaoPrecoCarrinho({ finalizarPedido, setFinalizarPedido, precoTotal }) {
 
-  for (let index = 0; index < carrinho.length; index++) {
-    const itemCarrinho = carrinho[index];
-    const valor = itemCarrinho.produto.preco;
-    const quantidadeProduto = itemCarrinho.quantidade;
-    precoTotal += (valor * quantidadeProduto);
-  }
   return (
     <ExibidorPrecoCarrinhoEstilizado>
       <div>
         <h4>Valor total de carrinho:</h4>
-        <h3>R${precoTotal.toFixed(2)}</h3>
+        <div className='preco'>
+          <h3>R${precoTotal.toFixed(2)}</h3>
+          <h2>ou 10x de R${(precoTotal / 10).toFixed(2)} sem juros.</h2>
+        </div>
       </div>
-      <BotaoComprar />
+      <BotaoFinalizarCompra finalizarPedido={finalizarPedido} setFinalizarPedido={setFinalizarPedido} />
+
     </ExibidorPrecoCarrinhoEstilizado>
   )
 }

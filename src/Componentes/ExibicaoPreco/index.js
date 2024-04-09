@@ -53,7 +53,7 @@ export default function ExibicaoPreco({ preco }) {
       <p>à vista</p>
       </div>
         
-        <p>Ou parcele em <span className='destaque'>até 3x R${(preco / 3).toFixed(2)}</span></p>
+        <p>Ou parcele em <span className='destaque'>até 10x R${(preco / 10).toFixed(2)} sem juros</span></p>
     </ExibicaoPrecoEstilizado>
   )
 }

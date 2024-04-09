@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Titulo from '../../Componentes/Titulo'
 import { useCarrinhoContext } from '../../Contextos/carrinho';
 import CardItemCarrinho from '../../Componentes/CardItemCarrinho';
 import ExibicaoPrecoCarrinho from '../../Componentes/ExibicaoPrecoCarrinho';
 import MenuLink from '../../Componentes/MenuLink';
+import AbaFinalizarPedido from '../../Componentes/AbaFinalizarPedido';
 
 const CarrinhoEstilizado = styled.section`
 
@@ -43,7 +44,7 @@ const CarrinhoEstilizado = styled.section`
   }
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 1180px){
   margin-top: 1.5em;
   .exibicaoProdutos {
     margin: 1em;
@@ -65,17 +66,33 @@ export default function PaginaCarrinho() {
 }
 
 
+
+// ================ DEFINIÇÃO DO ESTADO DO CARRINHO ========================
+
 function ExibicaoPadrao(carrinho) {
+  const [finalizarPedido, setFinalizarPedido] = useState(false)
+
+  let precoPedido = 0;
+
+  for (let index = 0; index < carrinho.length; index++) {
+    const itemCarrinho = carrinho[index];
+    const valor = itemCarrinho.produto.preco;
+    const quantidadeProduto = itemCarrinho.quantidade;
+    precoPedido += (valor * quantidadeProduto);
+  }
+ 
   return (
     <>
       {
         carrinho.map((itemCarrinhho) => { return <CardItemCarrinho key={itemCarrinhho.produto.id} itemCarrinho={itemCarrinhho} /> })
       }
-      <ExibicaoPrecoCarrinho carrinho={carrinho} />
+      <ExibicaoPrecoCarrinho precoTotal={precoPedido} finalizarPedido={finalizarPedido} setFinalizarPedido={setFinalizarPedido}/>
+        {finalizarPedido ? <AbaFinalizarPedido precoPedido={precoPedido}/> : ""}
     </ >
 
   )
 }
+
 
 function ExibicaoVazio() {
   return (

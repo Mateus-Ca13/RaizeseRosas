@@ -18,13 +18,19 @@ font-weight: 700;
 color: var(--branco);
 }
 
-
+@media screen and (max-width: 680px){
+  width: 100%
+}
 `
 
-export default function BotaoComprar() {
+export default function BotaoFinalizarCompra({ finalizarPedido, setFinalizarPedido }) {
+
     return (
-        <BotaoEstilizado>
-            Finalizar Compra
+        <BotaoEstilizado onClick={() => {
+            finalizarPedido == true ? setFinalizarPedido(false) : setFinalizarPedido(true);
+            
+        }}>
+        Finalizar Compra
         </BotaoEstilizado>
 
     )
