@@ -11,6 +11,7 @@ margin: 1em 0;
     p {
         color: var(--verde-principal);
         margin: 0 1em;
+        text-align: center;
     }
 }
 
@@ -35,23 +36,34 @@ button {
     padding: 1em;
 }
 
-@media screen and (max-width: 580px) {  
+@media screen and (max-width: 780px) {  
     .flex {
         flex-direction: column;
         align-items: center;
         justify-content: center;    
     }
     input {
-        width: 88%;
+        width: 90%;   
+    }
+    p {
+        font-size: 14px;
+        }
+}
+@media screen and (max-width: 680px) {
+    input {
+        padding: 0.2em 1em;
+        font-size: 14px;
     }
     button {
         width: 100%;
+        font-size: 14px;
+        padding: 0.5em;
+
     }
-    
-}
+    }
 `
 
-export default function AbaDesconto({ setDesconto, frete, precoPedido, desconto }) {
+export default function AbaCupomDesconto({ setDesconto, frete, precoPedido, desconto }) {
     const [codigoCupom, setCodigoCupom] = useState("");
     const cupons = [
         {
@@ -96,7 +108,7 @@ export default function AbaDesconto({ setDesconto, frete, precoPedido, desconto 
        <h2>Cupom de Desconto</h2>
        <div className='flex'>
         <input placeholder='Insira seu Cupom' onChange={(evento)=>{atualizarCodigo(evento)}}></input>
-        <button onClick={()=>{aplicarCupom(cupons)}}>Aplicar</button>
+        <button onClick={()=>{aplicarCupom(cupons)}}>Aplicar Cupom</button>
         {desconto > 0 ? <p>Cupom aplicado com sucesso!</p> : <p></p>}
         </div>
         </AbaDescontoEstilizada>

@@ -46,6 +46,16 @@ const AbaPagamentoEstilizada = styled.section`
     }
   }
 }
+@media screen and (max-width: 680px){
+
+  form {
+    font-size: 14px;
+  }
+
+  .opcao {
+    padding: 0.5em;
+  }
+}
 `
 
 export default function AbaPagamento({ precoTotal, setFormaPagamento}) {

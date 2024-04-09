@@ -35,7 +35,7 @@ img {
     }
 }
 
-@media screen  and (max-width: 580px){
+@media screen  and (max-width: 680px){
     flex-direction: column;
     align-items: center;
     padding: 1em;
@@ -48,6 +48,14 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    h3, .precoProduto {
+        font-size:14px;
+    }
+
+    button {
+        font-size: 12px;
     }
 }
 `

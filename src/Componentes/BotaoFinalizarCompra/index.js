@@ -19,7 +19,9 @@ color: var(--branco);
 }
 
 @media screen and (max-width: 680px){
-  width: 100%
+  width: 100%;
+  font-size: 14px;
+  padding: 0.6em;
 }
 `
 

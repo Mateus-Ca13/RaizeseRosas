@@ -36,6 +36,21 @@ const ExibidorPrecoCarrinhoEstilizado = styled.div`
   @media screen  and (max-width: 680px){
     flex-direction: column;
     align-items: start;
+
+    h4, h3, .preco h2{
+      font-size: 14px;
+    }
+
+  }
+
+  @media screen  and (max-width: 380px){
+    .preco {
+
+      h2 {
+        font-size: 11px;
+        margin: 0;
+      }
+    }
   }
 
 `

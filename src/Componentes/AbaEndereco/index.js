@@ -43,7 +43,24 @@ form input {
     flex-wrap: wrap;
     max-width: 100%;
   }
+
+  .column {
+    margin: 0.5em 1em;
+  }
+
 }
+
+@media screen and (max-width: 680px){
+  
+  .column {
+    margin: 0.5em 1em;
+  }
+
+  form input, label {
+    font-size: 14px;
+  }
+}
+
 `
 
 export default function AbaEndereco({ taxaEntrega, setTaxaEntrega, setDesconto, setEndereco, endereco }) {

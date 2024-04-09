@@ -24,19 +24,23 @@ button {
 }
 
 .resultadoFrete {
+  text-align: center;
   margin: 0;
   color: var(--verde-principal);
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 780px){
   flex-direction: column;
 
   button {
     width: 100%;
+    font-size: 14px;
   }
 
   .resultadoFrete {
+  
     margin: 0 0 2em 0;
+    font-size: 14px;
   }
 }
 `

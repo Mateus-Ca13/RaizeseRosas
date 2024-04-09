@@ -37,8 +37,14 @@ h3 {
   }
 }
 
-@media screen and (max-width: 780px){
-
+@media screen and (max-width: 680px){
+  h3 {
+    font-size: 16px;
+  }
+  .subtotal p {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 `
 

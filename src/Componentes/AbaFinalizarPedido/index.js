@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import AbaPrecoFinal from '../AbaPrecoFinal'
 import AbaEndereco from '../AbaEndereco'
 import AbaPagamento from '../AbaPagamento'
-import AbaDesconto from '../AbaDesconto'
+import AbaCupomDesconto from '../AbaCupomDesconto'
 import AbaConfirmarCompra from '../AbaConfirmarCompra'
 
 const AbaEstilizada = styled.section`
@@ -18,11 +18,21 @@ h2 {
 
 @media screen and (max-width: 780px){
   flex-direction: column;
+  
 
   .abas {
     display: flex;
     flex-direction: column;
+
+    
   }
+}
+
+@media screen and (max-width: 680px){
+  margin: 0;
+  h2 {
+      font-size: 16px;
+    }
 }
 `
 
@@ -43,7 +53,7 @@ export default function AbaFinalizarPedido({ precoPedido }) {
       <div className='abas'>
         <AbaEndereco taxaEntrega={taxaEntrega} setTaxaEntrega={setTaxaEntrega} setDesconto={setDesconto} setEndereco={setEndereco} endereco={endereco}/>
         {taxaEntrega > 0 ? <AbaPagamento precoTotal={taxaEntrega + precoPedido + desconto} setFormaPagamento={setFormaPagamento}/>: ""}
-        {taxaEntrega > 0 ? <AbaDesconto desconto={desconto} setDesconto={setDesconto} frete={taxaEntrega} precoPedido={precoPedido}/> : ""}
+        {taxaEntrega > 0 ? <AbaCupomDesconto desconto={desconto} setDesconto={setDesconto} frete={taxaEntrega} precoPedido={precoPedido}/> : ""}
         {formaPagamento ? <AbaConfirmarCompra precoTotal={taxaEntrega + precoPedido + desconto} formaPagamento={formaPagamento} endereco={endereco}/> : ""}
       </div>
       <AbaPrecoFinal precoPedido={precoPedido} precoEntrega={taxaEntrega} desconto={desconto} />
