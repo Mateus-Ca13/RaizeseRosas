@@ -11,6 +11,12 @@ display: block;
  span {
   font-weight: 700;
  }
+
+ @media screen and (max-width: 680px){
+  p {
+    font-size: 14px;
+  }
+ }
 `
 
 export default function ItemListaPedido({itemCarrinho, key}) {
