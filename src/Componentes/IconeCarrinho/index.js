@@ -30,6 +30,11 @@ const CarrinhoEstilizado = styled.div`
     color: var(--preto);
 }
 
+@media screen and (max-width: 580px){
+    .icone {
+        font-size: 20px;
+    }
+}
 
 `
 const IconeItensCarrinho = styled.span`

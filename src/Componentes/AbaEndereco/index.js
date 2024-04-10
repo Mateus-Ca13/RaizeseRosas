@@ -27,34 +27,34 @@ form input {
 }
 .flex {
   display: flex;
-  width: 100%;
   align-items: center;
 }
 
 @media screen and (max-width: 1280px){
   .flex {
     flex-wrap: wrap;
-    max-width: 90%;
+  }
+  .column {
+    margin: 0.5em 0;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 780px){
   .flex {
     flex-wrap: wrap;
-    max-width: 100%;
   }
 
   .column {
-    margin: 0.5em 1em;
+    margin: 0.5em 0;
+    width: 100%;
   }
-
 }
 
 @media screen and (max-width: 680px){
   
-  .column {
-    margin: 0.5em 1em;
-  }
+
+  
 
   form input, label {
     font-size: 14px;
