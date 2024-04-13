@@ -46,7 +46,8 @@ const IconeItensCarrinho = styled.span`
 
 export default function IconeCarrinho() {
     const {carrinho} = useCarrinhoContext();
-    const numeroDeItens = carrinho.length;
+    var numeroDeItens = 0;
+    carrinho.forEach((produto) => {numeroDeItens = produto.quantidade + numeroDeItens});
 
     return (
         <Link to={"/carrinho"}>

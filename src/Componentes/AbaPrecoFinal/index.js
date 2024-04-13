@@ -47,6 +47,7 @@ box-shadow: none;
 padding: 0;
 
 .abrirAba {
+  
   display: flex;
   gap: 0.2em;
   flex-direction: column;
