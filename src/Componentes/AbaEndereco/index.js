@@ -7,6 +7,7 @@ const AbaEnderecoEstilizada = styled.section`
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1280px){

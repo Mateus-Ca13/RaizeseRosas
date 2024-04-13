@@ -13,8 +13,6 @@ text-align: center;
 padding: 1.5em;
 border-radius: 10px;
 
-
-
 h3 {
   border-bottom: 5px solid var(--verde-principal);
 }
@@ -60,6 +58,7 @@ padding: 0;
   border-radius: 5px;
 }
 .desativado {
+  transition: 0.3s all;
   position: fixed;
   right: -220px;
 }
@@ -82,6 +81,7 @@ padding: 0;
 `
 
 const AbaParaRolagem = styled.section`
+transition: 0.3s all;
   box-shadow: 1px 1px 10px 1px var(--cinza);
 border-radius: 15px 0 0 15px;
   padding: 0.5em 1em;
