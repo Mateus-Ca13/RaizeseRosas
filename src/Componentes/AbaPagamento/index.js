@@ -56,6 +56,12 @@ const AbaPagamentoEstilizada = styled.section`
     padding: 0.5em;
   }
 }
+
+@media screen and (max-width: 320px){
+  .credito select {
+    font-size: 12px;
+  }
+}
 `
 
 export default function AbaPagamento({ precoTotal, setFormaPagamento}) {

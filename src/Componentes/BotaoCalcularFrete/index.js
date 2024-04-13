@@ -50,7 +50,7 @@ button {
   }
 }
 `
-export default function BotaoCalcularFrete({ cep, taxaEntrega, setTaxaEntrega, inputsPreenchidos, setDesconto }) {
+export default function BotaoCalcularFrete({ cep, taxaEntrega, setTaxaEntrega, inputsPreenchidos, setFormaPagamento, setDesconto }) {
   const [freteVisivel, setFreteVisivel] = useState(false)
 
   function calcularFrete(cep) {
@@ -75,6 +75,7 @@ export default function BotaoCalcularFrete({ cep, taxaEntrega, setTaxaEntrega, i
       setTaxaEntrega(0)
       setDesconto(0)
       alert("Preencha todos os campos corretamente!")
+      setFormaPagamento(null)
     }
   }
 

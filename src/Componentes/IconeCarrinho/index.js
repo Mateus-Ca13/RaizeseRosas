@@ -30,12 +30,6 @@ const CarrinhoEstilizado = styled.div`
     color: var(--preto);
 }
 
-@media screen and (max-width: 580px){
-    .icone {
-        font-size: 20px;
-    }
-}
-
 `
 const IconeItensCarrinho = styled.span`
     font-size: 14px;
@@ -51,7 +45,7 @@ const IconeItensCarrinho = styled.span`
 
 
 export default function IconeCarrinho() {
-    const {carrinho, adicionarProdutoNoCarrinho} = useCarrinhoContext();
+    const {carrinho} = useCarrinhoContext();
     const numeroDeItens = carrinho.length;
 
     return (

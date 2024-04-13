@@ -38,7 +38,7 @@ export default function Rodape() {
         <img className='logo' src={logo} alt='Logotipo da Raizes & Rosas'></img>
       </MenuLink>
       <div className='links'>
-        <MenuLink estilizado to={"/categorias"}>Categorias</MenuLink>
+        <MenuLink estilizado to={"/"}>Destaques</MenuLink>
         <MenuLink estilizado to={"/unidades"}>Unidades</MenuLink>
         <MenuLink estilizado to={"/contato"}>Contato</MenuLink>
       </div>

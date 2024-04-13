@@ -18,16 +18,12 @@ h2 {
 
 @media screen and (max-width: 780px){
   flex-direction: column;
-  
-
   .abas {
+    position: relative;
     display: flex;
     flex-direction: column;
-
-    
   }
 }
-
 @media screen and (max-width: 680px){
   margin: 0;
   h2 {
@@ -51,7 +47,7 @@ export default function AbaFinalizarPedido({ precoPedido }) {
   return (
     <AbaEstilizada>
       <div className='abas'>
-        <AbaEndereco taxaEntrega={taxaEntrega} setTaxaEntrega={setTaxaEntrega} setDesconto={setDesconto} setEndereco={setEndereco} endereco={endereco}/>
+        <AbaEndereco taxaEntrega={taxaEntrega} setTaxaEntrega={setTaxaEntrega} setDesconto={setDesconto} setFormaPagamento={setFormaPagamento} setEndereco={setEndereco} endereco={endereco}/>
         {taxaEntrega > 0 ? <AbaPagamento precoTotal={taxaEntrega + precoPedido + desconto} setFormaPagamento={setFormaPagamento}/>: ""}
         {taxaEntrega > 0 ? <AbaCupomDesconto desconto={desconto} setDesconto={setDesconto} frete={taxaEntrega} precoPedido={precoPedido}/> : ""}
         {formaPagamento ? <AbaConfirmarCompra precoTotal={taxaEntrega + precoPedido + desconto} formaPagamento={formaPagamento} endereco={endereco}/> : ""}
